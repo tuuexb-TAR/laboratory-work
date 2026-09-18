@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 2</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script type="module">
+        const result = confirm("Натисніть 'ОК' або 'Скасувати'");
+        const output = document.getElementById('output');
+        
+        if (result) {
+            output.textContent = "Було натиснуто кнопку 'ОК'";
+        } else {
+            output.textContent = "Було натиснуто кнопку 'Скасувати'";
+        }
+    </script>
+</body>
+</html>

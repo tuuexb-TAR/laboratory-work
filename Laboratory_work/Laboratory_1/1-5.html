@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор пароля</title>
+</head>
+<body>
+    <div id="password-block"></div>
+
+    <script type="module">
+        const name = "Тарас";
+        const journalNumber = 8;
+        
+        const namePart = name.slice(0, 3);
+        const mathPart = journalNumber * 2;
+        const password = `${namePart}${mathPart}`;
+
+        const div = document.getElementById('password-block');
+        div.textContent = `Згенерований пароль: ${password}`;
+    </script>
+</body>
+</html>

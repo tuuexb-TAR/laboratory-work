@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Парність номера</title>
+</head>
+<body>
+    <script type="module">
+        const journalNumber = 4;
+        const p = document.createElement('p');
+
+        if (journalNumber % 2 === 0) {
+            p.textContent = `Номер ${journalNumber} є парним.`;
+            p.style.color = 'green';
+        } else {
+            p.textContent = `Номер ${journalNumber} є непарним.`;
+            p.style.color = 'red';
+        }
+
+        document.body.appendChild(p);
+    </script>
+</body>
+</html>
